@@ -29,7 +29,7 @@ For each job listing, the following information is collected:
 ## 📊 Sample Extracted Data
 *(DataFrame preview from VS Code)*
 
-![DataFrame Preview](./images/df_table.png)
+![DataFrame Preview](/images/df_table.png)
 
 ---
 
