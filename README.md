@@ -1,42 +1,58 @@
-# Naukrigulf Data Engineer Job Scraper
+# 🕷️ Naukrigulf Job Scraper
 
-This project uses **Python and Selenium** to scrape **Data Engineer job listings** from the **Naukrigulf** website.
-
-The script collects job data from the **first 3 pages** and saves it into a CSV file for analysis.
+A Python-based web scraper that automates the extraction of **Data Engineer job listings** from [Naukrigulf](https://www.naukrigulf.com), collecting structured data across multiple pages and exporting it to CSV.
 
 ---
 
-## 🔍 Extracted Data
-For each job listing, the following information is collected:
-- Job Title  
-- Company Name  
-- Job Location  
-- Required Experience  
-- Job Description (from listing page)
+## 📸 Preview
 
-✅ Total extracted jobs: **90**
+### Website
+![Naukrigulf Website](images/website.png)
+
+### Scraped Data (DataFrame)
+![DataFrame Output](images/df_output.png)
 
 ---
 
-## 🛠 Tools Used
-- Python  
-- Selenium  
-- Pandas  
-- Chrome WebDriver  
+## ⚙️ How It Works
+
+1. Launches a Chrome browser using **Selenium WebDriver** with anti-detection options.
+2. Navigates to the Naukrigulf Data Engineer jobs page.
+3. Loops through the **first 3 pages**, scraping each job card.
+4. Extracts: **Job Title**, **Company**, **Experience**, **Location**, and **Description**.
+5. Stores all results in a **Pandas DataFrame** and exports to `Jobs.csv`.
 
 ---
 
-## 📊 Sample Extracted Data
-*(DataFrame preview from VS Code)*
+## 🛠️ Tech Stack
 
-![DataFrame Preview](images/df_table.png)
-
----
-
-## 🌐 Target Website
-*(Naukrigulf – Data Engineer Jobs page)*
-
-![Website Screenshot](images/job_site.png)
+| Tool | Purpose |
+|------|---------|
+| `selenium` | Browser automation & scraping |
+| `pandas` | Data structuring & CSV export |
+| `time` | Page load delays |
 
 ---
 
+## 🚀 Getting Started
+
+```bash
+pip install selenium pandas
+```
+
+> Make sure you have **ChromeDriver** installed and compatible with your Chrome version.
+
+Then run the notebook `scraper.ipynb` cell by cell.
+
+---
+
+## 📁 Output
+
+The scraped data is saved as **`Jobs.csv`** with the following columns:
+
+| title | company | experience | location | description |
+|-------|---------|------------|----------|-------------|
+
+---
+
+**Created by:** ESAB &nbsp;|&nbsp; **Date:** 07-04-2026 &nbsp;|&nbsp; Digital Egypt Pioneers Initiative
