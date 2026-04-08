@@ -29,18 +29,14 @@ For each job listing, the following information is collected:
 ## 📊 Sample Extracted Data
 *(DataFrame preview from VS Code)*
 
-![DataFrame Preview](/images/df_table.png)
+![DataFrame Preview](images/df_table.png)
 
 ---
 
 ## 🌐 Target Website
 *(Naukrigulf – Data Engineer Jobs page)*
 
-![Website Screenshot](./images/job_site.png)
+![Website Screenshot](images/job_site.png)
 
 ---
 
-## ▶️ How to Run
-1. Install required libraries:
-   ```bash
-   pip install selenium pandas
