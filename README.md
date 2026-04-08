@@ -7,10 +7,10 @@ A Python-based web scraper that automates the extraction of **Data Engineer job 
 ## 📸 Preview
 
 ### Website
-![Naukrigulf Website](images/website.png)
+![Naukrigulf Website](images/job_site.jpg)
 
 ### Scraped Data (DataFrame)
-![DataFrame Output](images/df_output.png)
+![DataFrame Output](images/df_table.jpg)
 
 ---
 
